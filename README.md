@@ -22,7 +22,7 @@ class PhotoInterruptor
 
   private:
     int sentryLED = 0;          // LED to turn on when the beam is broken
-    int flash = 11;             // LED half of photointerruptor
+    int flash = 11;             // LED half of photointerruptor (pin assignments are set in init()
     int IPin  =  7;             // PhotoTransistor
     bool beamBroken = false;    // true for broken beam
   
