@@ -3,12 +3,13 @@
 
 /*
 	Test program for the PhotoInterruptor Arduino library
+ Updated 11/25/2018
 */
 
-const int PhotoLED = 6;
+const int PowerOn = 5;
 const int IndicatorLED = 7;
-const int IPin = 5;
-PhotoInterruptor pi  = PhotoInterruptor(IPin, PhotoLED);
+const int transistorPin = 6;
+PhotoInterruptor pi  = PhotoInterruptor(PowerOn, transistorPin);
 
 void setup(){
   

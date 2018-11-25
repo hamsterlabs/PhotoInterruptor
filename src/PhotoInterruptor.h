@@ -8,15 +8,15 @@ class PhotoInterruptor
 
   private:
     int sentryLED = 0;          // LED to turn on when the beam is broken
-    int flash = 11;             // LED half of photointerruptor
-    int IPin  =  7;             // PhotoTransistor
+    int lightsOn = 0;           // LED control, power for interruptor circuit
+    int samplePin = 0;          // LED to check the transistor
     bool beamBroken = false;    // true for broken beam
   
   public:
-    PhotoInterruptor(int iPin, int ledPin);
-    void init( int iPin, int ledPin );
-    void controlLED(bool led_on);
-    bool sample();
-    void setSentryLED(int ledPin);
+    PhotoInterruptor(int lightson, int samplepin);
+    void init( int lightson, int samplepin  );                   //
+    void controlLED(bool led_on);    // turns on the circuit so you can sample it
+    bool sample();                   // returns beamBroken on (true) or off (false)
+    void setSentryLED(int digOutPin);   // Digital output to trigger (optional)
 };
 #endif
