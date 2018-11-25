@@ -16,7 +16,6 @@ sample	KEYWORD2
 init	KEYWORD2
 controlLED	KEYWORD2
 beamBroken	KEYWORD2
-IPin	KEYWORD2
 setSentryLED KEYWORD2
 controlLED KEYWORD2
 #######################################
