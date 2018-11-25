@@ -14,9 +14,9 @@ class PhotoInterruptor
   
   public:
     PhotoInterruptor(int lightson, int samplepin);
-    void init( int lightson, int samplepin  );                   //
-    void controlLED(bool led_on);    // turns on the circuit so you can sample it
-    bool sample();                   // returns beamBroken on (true) or off (false)
-    void setSentryLED(int digOutPin);   // Digital output to trigger (optional)
+    void init( int lightson, int samplepin  );            //
+    void controlLED(bool led_on);                         // turns on the circuit so you can sample it
+    bool sample();                                        // returns beamBroken on (true) or off (false)
+    void setSentryLED(int digOutPin);                     // Digital output to trigger (optional)
 };
 #endif
